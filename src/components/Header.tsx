@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Instagram, Youtube, Music, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import ThemeToggle from './ThemeToggle';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -48,9 +47,8 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center space-x-3">
-            <ThemeToggle />
+          {/* Desktop Menu Button */}
+          <div className="hidden md:flex items-center">
             <Button
               variant="ghost"
               size="sm"
@@ -62,8 +60,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="flex items-center space-x-2 md:hidden">
-            <ThemeToggle />
+          <div className="md:hidden">
             <Button
               variant="ghost"
               size="sm"

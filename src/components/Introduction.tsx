@@ -66,6 +66,34 @@ const Introduction = () => {
               - Luis "Gato Show" Lecuna
             </cite>
           </div>
+
+          {/* Artist Photo Gallery */}
+          <div className="mt-16 space-y-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-text-primary text-center mb-8">
+              El Artista en Acción
+            </h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Photo placeholders - Replace with actual photos */}
+              <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20 flex items-center justify-center">
+                <div className="text-center">
+                  <Music className="w-12 h-12 text-primary mx-auto mb-2" />
+                  <p className="text-text-secondary">Foto del Artista</p>
+                </div>
+              </div>
+              <div className="aspect-square bg-gradient-to-br from-accent/10 to-accent/5 rounded-2xl border border-accent/20 flex items-center justify-center">
+                <div className="text-center">
+                  <Music className="w-12 h-12 text-accent mx-auto mb-2" />
+                  <p className="text-text-secondary">Foto del Artista</p>
+                </div>
+              </div>
+              <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl border border-primary/20 flex items-center justify-center md:col-span-2 lg:col-span-1">
+                <div className="text-center">
+                  <Music className="w-12 h-12 text-primary mx-auto mb-2" />
+                  <p className="text-text-secondary">Foto del Artista</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
