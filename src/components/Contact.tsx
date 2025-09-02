@@ -38,7 +38,7 @@ const Contact = () => {
     {
       icon: MessageCircle,
       title: "WhatsApp",
-      value: "+58 414-123-4567",
+      value: "+1 (555) 123-4567",
       action: "Enviar Mensaje",
       color: "from-green-500 to-green-600"
     },
@@ -266,29 +266,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Business Hours */}
-              <div className="bg-card rounded-2xl p-6 border border-border/50">
-                <h3 className="text-xl font-bold text-text-primary mb-4 flex items-center">
-                  <Clock className="w-5 h-5 mr-2 text-primary" />
-                  Horarios de Atención
-                </h3>
-                
-                <div className="space-y-2 text-text-secondary">
-                  <div className="flex justify-between">
-                    <span>Lunes - Viernes</span>
-                    <span>9:00 AM - 7:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Sábados</span>
-                    <span>10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Domingos</span>
-                    <span>Solo WhatsApp</span>
-                  </div>
-                </div>
-              </div>
-
               {/* Location */}
               <div className="bg-card rounded-2xl p-6 border border-border/50">
                 <h3 className="text-xl font-bold text-text-primary mb-4 flex items-center">
@@ -296,9 +273,12 @@ const Contact = () => {
                   Área de Cobertura
                 </h3>
                 
+                <p className="text-text-secondary mb-3">
+                  <strong>Base:</strong> Estados Unidos
+                </p>
                 <p className="text-text-secondary">
-                  Caracas, Valencia, Maracay y ciudades aledañas. 
-                  Consulta para eventos en otras localidades.
+                  Shows disponibles a nivel mundial. Consulta disponibilidad 
+                  y costos de viaje para eventos internacionales.
                 </p>
               </div>
             </div>

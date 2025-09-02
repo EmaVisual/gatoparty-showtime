@@ -86,58 +86,6 @@ const Shows = () => {
             ))}
           </div>
 
-          {/* Formats */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            {formats.map((format, index) => (
-              <div 
-                key={index} 
-                className={`relative bg-card rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-2 ${
-                  format.featured 
-                    ? 'border-primary shadow-stage bg-gradient-to-br from-card to-primary/5' 
-                    : 'border-border/50 hover:border-primary/30 hover:shadow-stage'
-                }`}
-              >
-                {format.featured && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold shadow-glow">
-                      Más Popular
-                    </div>
-                  </div>
-                )}
-
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-text-primary mb-2">
-                    {format.title}
-                  </h3>
-                  <p className="text-text-secondary">
-                    {format.description}
-                  </p>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {format.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-center text-text-secondary">
-                      <CheckCircle className="w-5 h-5 text-primary mr-3 flex-shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary mb-4">
-                    {format.highlight}
-                  </div>
-                  <Button 
-                    variant={format.featured ? "default" : "outline"}
-                    className={format.featured ? "bg-primary hover:bg-primary-hover stage-glow" : ""}
-                    size="lg"
-                  >
-                    Solicitar Cotización
-                  </Button>
-                </div>
-              </div>
-            ))}
-          </div>
 
           {/* CTA Section */}
           <div className="text-center bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-8 md:p-12 border border-primary/20">

@@ -19,7 +19,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-t from-primary/10 to-background border-t border-border/50">
+    <footer className="bg-gradient-to-t from-primary to-blue-900 dark:from-primary/20 dark:to-background text-white dark:text-foreground border-t border-border/50">
       <div className="container mx-auto px-4 py-12">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
@@ -31,19 +31,19 @@ const Footer = () => {
                 className="h-12 w-auto"
               />
             </div>
-            <p className="text-text-secondary max-w-sm">
+            <p className="text-white/80 dark:text-text-secondary max-w-sm">
               Llevando la mejor fiesta a tu evento con más de 10 años de experiencia 
               en shows musicales en vivo.
             </p>
-            <div className="flex items-center space-x-2 text-sm text-text-secondary">
-              <Heart className="w-4 h-4 text-primary" />
-              <span>Hecho con pasión en Venezuela</span>
+            <div className="flex items-center space-x-2 text-sm text-white/70 dark:text-text-secondary">
+              <Heart className="w-4 h-4 text-white dark:text-primary" />
+              <span>Hecho con pasión</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-text-primary mb-4">
+            <h3 className="text-lg font-semibold text-white dark:text-text-primary mb-4">
               Enlaces Rápidos
             </h3>
             <ul className="space-y-2">
@@ -51,7 +51,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-text-secondary hover:text-primary transition-colors duration-200"
+                    className="text-white/80 dark:text-text-secondary hover:text-white dark:hover:text-primary transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -62,45 +62,36 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div>
-            <h3 className="text-lg font-semibold text-text-primary mb-4">
+            <h3 className="text-lg font-semibold text-white dark:text-text-primary mb-4">
               Sígueme en Redes
             </h3>
-            <div className="flex space-x-4 mb-6">
+            <div className="flex space-x-4">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
-                  className={`text-text-secondary ${social.color} transition-colors duration-200`}
+                  className="text-white/80 dark:text-text-secondary hover:text-white dark:hover:text-primary transition-colors duration-200"
                   aria-label={social.label}
                 >
                   <social.icon className="w-6 h-6" />
                 </a>
               ))}
             </div>
-            
-            <div className="space-y-2 text-sm text-text-secondary">
-              <div>
-                <strong>Horarios de Atención:</strong>
-              </div>
-              <div>Lun - Vie: 9:00 AM - 7:00 PM</div>
-              <div>Sáb: 10:00 AM - 4:00 PM</div>
-              <div>Dom: Solo WhatsApp</div>
-            </div>
           </div>
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-border/50 pt-8">
+        <div className="border-t border-white/20 dark:border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-text-secondary text-sm">
+            <div className="text-white/80 dark:text-text-secondary text-sm">
               Gato Show © {currentYear} | Llevando la mejor fiesta a tu evento.
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-text-secondary">
-              <a href="#" className="hover:text-primary transition-colors duration-200">
+            <div className="flex items-center space-x-6 text-sm text-white/70 dark:text-text-secondary">
+              <a href="#" className="hover:text-white dark:hover:text-primary transition-colors duration-200">
                 Términos de Servicio
               </a>
-              <a href="#" className="hover:text-primary transition-colors duration-200">
+              <a href="#" className="hover:text-white dark:hover:text-primary transition-colors duration-200">
                 Política de Privacidad
               </a>
             </div>
