@@ -14,26 +14,26 @@
     --primary-hover: 200 70% 40%;
     --primary-glow: 200 70% 60%;
     
-    /* Background System */
-    --background: 0 0% 100%;
+    /* Background System - Now using dark values */
+    --background: 222 84% 5%;
     --background-dark: 222 84% 5%;
-    --foreground: 222 47% 11%; /* #0F172A equivalent */
+    --foreground: 0 0% 100%;
     
-    /* Card System */
-    --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    /* Card System - Now using dark values */
+    --card: 217 33% 18%;
+    --card-foreground: 0 0% 100%;
     --card-dark: 217 33% 18%;
     
-    /* Text Hierarchy */
-    --text-primary: 222 47% 11%; /* #0F172A */
-    --text-secondary: 215 20% 65%; /* #64748B */
-    --text-muted: 215 16% 47%;
+    /* Text Hierarchy - Now using dark values */
+    --text-primary: 0 0% 100%;
+    --text-secondary: 215 20% 65%;
+    --text-muted: 215 16% 40%;
     
     /* Interactive Elements */
     --accent: 200 70% 50%;
     --accent-foreground: 0 0% 100%;
-    --secondary: 0 0% 99%;
-    --secondary-foreground: 222 47% 11%;
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 0 0% 100%;
     
     /* Stage Lighting Effects */
     --glow-primary: 200 70% 50%;
@@ -51,16 +51,16 @@
     --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.4);
     --shadow-spotlight: 0 0 100px hsl(var(--spotlight) / 0.8);
     
-    /* UI Elements */
-    --border: 215 28% 92%;
-    --input: 215 28% 92%;
+    /* UI Elements - Now using dark values */
+    --border: 217 33% 25%;
+    --input: 217 33% 25%;
     --ring: 200 70% 50%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 20% 60%;
+    --popover: 217 33% 18%;
+    --popover-foreground: 0 0% 100%;
     
     --radius: 0.75rem;
 
