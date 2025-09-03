@@ -14,10 +14,10 @@ const Header = () => {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Youtube, href: '#', label: 'YouTube' },
-    { icon: Music, href: '#', label: 'Spotify' },
-    { icon: MessageCircle, href: '#', label: 'WhatsApp' },
+    { icon: Instagram, href: 'https://instagram.com/gatoshowoficial', label: 'Instagram' },
+    { icon: Youtube, href: 'https://youtu.be/62OeXxn0llY?feature=shared', label: 'YouTube' },
+    { icon: Music, href: 'https://open.spotify.com/artist/69e62uZT4lyhz8zdZdcDCm?si=qxP311MQQyuLEwwBFsym1Q', label: 'Spotify' },
+    { icon: MessageCircle, href: 'https://soundcloud.com/gatoshowpficial', label: 'SoundCloud' },
   ];
 
   return (

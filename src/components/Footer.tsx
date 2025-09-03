@@ -12,10 +12,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram', color: 'hover:text-pink-500' },
-    { icon: Youtube, href: '#', label: 'YouTube', color: 'hover:text-red-500' },
-    { icon: Music, href: '#', label: 'Spotify', color: 'hover:text-green-500' },
-    { icon: MessageCircle, href: '#', label: 'WhatsApp', color: 'hover:text-green-600' },
+    { icon: Instagram, href: 'https://instagram.com/gatoshowoficial', label: 'Instagram', color: 'hover:text-pink-500' },
+    { icon: Youtube, href: 'https://youtu.be/62OeXxn0llY?feature=shared', label: 'YouTube', color: 'hover:text-red-500' },
+    { icon: Music, href: 'https://open.spotify.com/artist/69e62uZT4lyhz8zdZdcDCm?si=qxP311MQQyuLEwwBFsym1Q', label: 'Spotify', color: 'hover:text-green-500' },
+    { icon: MessageCircle, href: 'https://soundcloud.com/gatoshowpficial', label: 'SoundCloud', color: 'hover:text-orange-500' },
   ];
 
   return (
@@ -83,8 +83,18 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-white/20 dark:border-border/50 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-white/80 dark:text-text-secondary text-sm">
-              Gato Show © {currentYear} | Llevando la mejor fiesta a tu evento.
+            <div className="text-white/80 dark:text-text-secondary text-sm space-y-1">
+              <div>Gato Show © {currentYear} | Llevando la mejor fiesta a tu evento.</div>
+              <div>
+                <a 
+                  href="https://daezdigital.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-white dark:hover:text-primary transition-colors duration-200"
+                >
+                  Diseño y desarrollo por Daez Digital
+                </a>
+              </div>
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-white/70 dark:text-text-secondary">
